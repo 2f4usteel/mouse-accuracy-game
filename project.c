@@ -35,19 +35,17 @@ void display()
    glFlush();
 }
 
-void processHits (GLint hits, GLuint buffer[])
+int processHits (GLint hits, GLuint buffer[])
 {
    if(hits==1)
    {
-      Timer(0); //start timer on first click..
-      score++;
-   }
-   if(hits>=1)
-   {
+       Timer(0); //start timer on first click..
+       score++;
        rectX = random1();
        rectY = random1();
-       printf("Your Score is %d Clicks Per Minute!\n",score);
+       
    }
+    return score;
    
 }
  
@@ -97,6 +95,7 @@ void keyboard(unsigned char key, int x, int y)
 {
    switch (key) {
    case 27:        // ?!?
+         printf("Your Score is %d Clicks Per Minute!\n",score);
          exit(0);
          break;
    }
@@ -105,13 +104,14 @@ void keyboard(unsigned char key, int x, int y)
  
 void Timer1()
 {
+  printf("Your Score is %d Clicks Per Minute!\n",score);
   exit(0);
 }
  
 int Timer(int iUnused)
 {
    
-    glutTimerFunc(10000, Timer1, 0);
+    glutTimerFunc(60000, Timer1, 0);
    
 }
  
@@ -129,28 +129,5 @@ void main(int argc, char** argv)
    glutDisplayFunc(display);
    glutMouseFunc (mouse);
    glutKeyboardFunc (keyboard);
-   //Timer(0);
    glutMainLoop();
 }
-
-//***********************************************************************//
-//                                                                      //
-//  A Simple CLick Game, checking your reflexes for 60 seconds...      //
-//                                                                    //     
-//   Author: Suresh Bist.K (Ma'Ga BA*STeEl)                          //
-//                                                                  //
-//   Program: OpenGL and Picking                                   //
-//                                                                //
-//   Description:Click on the object(rectangle) for a  minute!   //     
-//                                                              //
-//   Date:         28 April 2014                               //
-//                                                            //
-//   License: Free!                                          //
-//                                                          //
-//   Contact : FB/2f4usteel                                // 
-//           : Steam/2f4usteel                            //
-//           : g+/2f4usteel                              //
-//           : reddit/2f4usteel                         //
-//           : youtube/2f4usteel                       //
-//           : github/2f4usteel                       //
-//***************************************************//
