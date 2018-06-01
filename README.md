@@ -10,11 +10,15 @@ Once you execute the program, a window is created which has a tiny square inside
 
 ## Execution 
 
-##Command
+## Command
+
+### Ubuntu/Debian
+`gcc -o project project.c -lGL -lGLU -lglut`
+`./project`
 
 #### OSX/MAC
-
 `gcc -framework OpenGL -framework GLUT -o project project.c`
+`./project`
 
 ## Preview 
 ![Preview](https://i.imgur.com/dzMfJvZ.gif)
