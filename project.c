@@ -1,6 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
+
+//Portable headers
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
 #include <GL/glut.h>
+#endif
 
 int score=0;
 float rectX = 0.f;
