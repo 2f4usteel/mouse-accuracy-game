@@ -11,8 +11,9 @@ Once you execute the program, a window is created which has a tiny square inside
 ## Execution 
 
 
-### MAC
+#### OSX/MAC
+
 `gcc -framework OpenGL -framework GLUT -o project project.c`
 
 ## Preview 
-[Preview](https://i.imgur.com/dzMfJvZ.gifv)
+![Preview](https://i.imgur.com/dzMfJvZ.gifv)
