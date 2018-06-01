@@ -6,19 +6,31 @@ This project was created during my college days for the course 'Computer Graphic
 Once you execute the program, a window is created which has a tiny square inside it. When you click on that square for the first time, a timer for 60 seconds is started. Your score is incremented only when you tap on the square. You can change the color of the square by tapping anywhere in the window apart from the square. After 60 seconds, the window will disappear and your score will be displayed in the terminal.
 
 ## Requirements
+* [GCC](https://gcc.gnu.org/) 
+* [OpenGL](https://www.opengl.org/)
+* [GLUT](https://www.opengl.org/resources/libraries/glut/)
 
+Install the requirements the mentioned above.
+Once the requirements are met, you can move onto execution.
 
 ## Execution 
 
-## Command
+Use the following commands to execute the program
 
-### Ubuntu/Debian
+**Ubuntu/Debian**
+
 `gcc -o project project.c -lGL -lGLU -lglut`
+
 `./project`
 
-#### OSX/MAC
+**OSX/MAC**
+
 `gcc -framework OpenGL -framework GLUT -o project project.c`
+
 `./project`
 
 ## Preview 
 ![Preview](https://i.imgur.com/dzMfJvZ.gif)
+
+## Output
+![Output](https://i.imgur.com/5QF74q6.png)
