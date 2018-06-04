@@ -10,7 +10,7 @@ Once you execute the program, a window is created which has a tiny square inside
 * [OpenGL](https://www.opengl.org/)
 * [GLUT](https://www.opengl.org/resources/libraries/glut/)
 
-Install the requirements the mentioned above.
+Install the requirements mentioned above.
 Once the requirements are met, you can move onto execution.
 
 ## Execution 
